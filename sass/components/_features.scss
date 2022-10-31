@@ -1,0 +1,63 @@
+// * Features styles:
+.features {
+    padding-top: 94px;
+  }
+  
+  .features__heading {
+    color: $color-text-title;
+  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+  
+  .features__list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  
+// * Hidden section title styles:
+  .visually-hidden {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
+  .features__thumb {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+  
+   width: 270px; 
+   height: 120px;
+  
+   background-color: $color-bg-secondary;
+   border-radius: 4px;
+//    outline: 1px dashed teal
+  }
+  
+  .features__title {
+    margin-bottom: 10px;
+    
+    color: $color-text-title;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    }
+  
+  .features__descr {
+    font-size: 14px;
+    line-height: 1.71;
+  }

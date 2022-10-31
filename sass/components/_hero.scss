@@ -1,0 +1,54 @@
+// * Hero styles:
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  
+    max-width: 1600px;
+    height: 600px;
+  
+    text-align: center;
+    background-color: $color-bg-footer;
+    background-image:
+    $color-overlay-hero,
+    url(../images/hero-overlay.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .hero__heading {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  
+    color: $color-white-primary;
+  
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  .hero__button {
+    display: inline-block;
+    align-items: center;
+    border-radius: 4px;
+    width: 216px;
+    height: 50px;
+    
+    background-color: $color-accent;
+    color:$color-white-primary;
+    border-color: transparent;
+  
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  }
+//  End Hero styles

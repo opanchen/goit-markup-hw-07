@@ -1,0 +1,52 @@
+// * Clients styles:
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .clients__heading {
+    margin-bottom: 50px;
+  
+    color: $color-text-title;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+  
+  .clients__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 170px;
+    height: 92px;
+    border: 1px solid $color-icon-gray;
+    border-radius: 4px;
+    transition: border-color 250ms $transition-cubic;
+
+    &:hover,
+    &:focus {
+      border-color: $color-accent;
+  }
+  }
+  
+  .clients__icon {
+    transition: fill 250ms $transition-cubic;
+    fill: $color-icon-gray;
+
+    // outline: 1px dashed teal; 
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+     fill: $color-accent;
+  }
+  }
+//  End Clients styles.

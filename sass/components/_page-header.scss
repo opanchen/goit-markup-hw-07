@@ -1,0 +1,114 @@
+// * Header styles:
+ .page-header__inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .page-header {
+    background-color: $color-white-primary;
+    border-bottom: 1px solid #ECECEC;
+  }
+  
+// * Site Navigation styles: 
+// * Logo styles: 
+  .logo {
+    transition: color 250ms $transition-cubic;
+  
+    color: $color-black-primary;
+  
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  .logo__accent {
+    color: $color-accent;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  .link,
+  .logo {
+    text-decoration: none;
+  }
+
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+    gap: 50px;
+  }
+  
+  // .site-nav__item {
+  //   outline: 1px dashed teal;
+  // }
+  
+  .site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $color-text-title;
+    transition: color 250ms $transition-cubic;
+  
+    &--current {
+        position: relative;
+        
+        color: $color-accent;
+    
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            
+            display: inline-block;
+            content: '';
+            width: 100%;
+            height: 4px;
+            
+            background-color: $color-accent;
+            border-radius: 2px;
+        }
+    }    
+    } 
+  
+// * Contacts navigation styles:
+  .contacts-nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .contacts-nav__icon{
+    fill: currentColor;
+  }
+  
+  .contacts-nav__link {
+    transition: color 250ms $transition-cubic;
+  
+    color: $color-text-primary;
+  
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .site-nav__link,
+  .contacts-nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  
+  .logo:hover,
+  .logo:focus,
+  .link:hover,
+  .link:focus {
+    color: $color-accent;
+  }
+//   End Header styles

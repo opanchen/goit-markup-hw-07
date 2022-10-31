@@ -1,0 +1,138 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    background-color: $color-bg-footer;
+  }
+  
+  .page-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  
+//   outline: 1px dashed teal
+  }
+  
+  .page-footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  
+    color: $color-white-primary;
+    font-style: normal;
+  }
+  
+  .address-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  
+  .address-nav__link {
+      display: inline-block;
+      
+      transition: color 250ms $transition-cubic; 
+      color: $color-text-contacts; 
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.71;
+
+    //   outline: 1px dotted teal; 
+
+      &--address {
+        display: inline-block;
+      
+        color: $color-white-primary;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        text-decoration: none;
+      }
+    }
+  
+  .socials {
+    display: inline-block;
+  
+    width: 206px;
+    height: 80px;
+    // outline: 1px dashed tomato; 
+  }
+  
+  .socials__text,
+  .footer-form__text {
+    margin-bottom: 20px;
+  
+    width: 116px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $color-white-primary;
+  }
+  
+  
+// * Footer form styles:
+//     .footer-form__wrapper {
+//     outline: 1px dashed tomato;
+//   } 
+  
+  .footer-form__text {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .footer-form__field {
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: border-color 250ms $transition-cubic;
+  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: inherit;
+    outline: none;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+      
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+    border-color: $color-accent;
+    color:$color-white-primary;
+    }
+  }
+  
+  .footer-form__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $color-white-primary;
+  fill: currentColor;
+  background-color: $color-accent;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  }
+  
+//  End Footer styles.
