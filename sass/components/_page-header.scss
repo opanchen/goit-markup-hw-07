@@ -10,28 +10,6 @@
   }
   
 // * Site Navigation styles: 
-// * Logo styles: 
-  .logo {
-    transition: color 250ms $transition-cubic;
-  
-    color: $color-black-primary;
-  
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-  }
-  .logo__accent {
-    color: $color-accent;
-  }
-  
-  .list {
-    list-style: none;
-  }
-  .link,
-  .logo {
-    text-decoration: none;
-  }
 
   .site-nav {
     display: flex;
@@ -104,11 +82,4 @@
     letter-spacing: 0.02em;
   }
 
-  
-  .logo:hover,
-  .logo:focus,
-  .link:hover,
-  .link:focus {
-    color: $color-accent;
-  }
 //   End Header styles
